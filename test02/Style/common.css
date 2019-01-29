@@ -33,6 +33,14 @@ main h2 { margin:  8px auto; font-size: 1.25em}
 
 main hr { border: 1px solid #0285a5;}
 
+.thumbnail { text-align: center;}
+.thumbnail img{
+    margin: 0px 2px;
+    padding: 0px;
+    width: 30%;
+    height: 30%;
+}
+
 .item .name:before { content:"・";}
 .item .name {
     float: left;
@@ -40,9 +48,7 @@ main hr { border: 1px solid #0285a5;}
 }
 
 .item .value:before { content:"：";}
-.item .value {
-    float: left;
-}
+.item .value { float: left;}
 
 .clear {
     clear: both;
