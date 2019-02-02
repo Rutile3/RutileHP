@@ -16,6 +16,11 @@ header {
     margin: 32px auto;
 }
 
+header h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
 main {
     margin: 16px auto;
     padding: 12px;
