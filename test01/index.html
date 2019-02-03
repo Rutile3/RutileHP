@@ -3,50 +3,91 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="ルチル">
-    <meta name="description" content="ルチル用のホームページ" />
-    <meta name="keywords" content="ルチル,ホームページ" />
-    <link rel="stylesheet" href="common.css">
-    <link rel="shortcut icon" href="image/favicon.gif" type="image/gif">
-    <link rel="apple-touch-icon" href="image/favicon.gif" type="image/gif">
+    <meta name="author" content="ルチルさん">
+    <meta name="description" content="ルチルさんのアトリエ">
+    <meta name="keywords" content="ルチル,ルチルさん,ルチルのアトリエ,チェイスタイル,WSTG">
+    <link rel="shortcut icon" href="./Image/favicon.png" type="image/gif">
+    <link rel="apple-touch-icon" href="./Image/favicon.png" type="image/gif">
+    <link rel="stylesheet" href="./Style/common.css">
+    <link rel="stylesheet" href="./Style/lightbox.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>ルチルのホームページ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>ルチルさんのアトリエ</title>
 </head>
 
 <body>
     <header>
+        <h1 class="page_title">ルチルさんのアトリエ</h1>
     </header>
     <main>
-        <a href="https://www.youtube.com/feed/subscriptions">   <img src="image/youtube.svg"        style="background-color:#FF0000;"></a>
-        <a href="https://github.com/Rutile3">                   <img src="image/github.svg"         style="background-color:#181717;"></a>
-        <a href="https://twitter.com/">                         <img src="image/twitter.svg"        style="background-color:#1DA1F2;"></a>
-        <a href="https://www.google.co.jp/">                    <img src="image/googlechrome.svg"   style="background-color:#4285F4;"></a>
-        <a href="https://drive.google.com/drive/my-drive">      <img src="image/googledrive.svg"    style="background-color:#4386FC;"></a>
-        <a href="https://www.dropbox.com/home">                 <img src="image/dropbox.svg"        style="background-color:#0061FF;"></a>
-        <a href="https://qiita.com/trend">                      <img src="image/qiita.svg"          style="background-color:#55C500;"></a>
-        <a href="http://ja.scp-wiki.net/">                      <img src="image/SCP.png"            style="background-color:#000000;"></a>
-        <a href="http://www.nicovideo.jp/">                     <img src="image/niconico.png"       style="background-color:#000000;"></a>
-        <a href="https://scrapbox.io/Rutile3Secret/">           <img src="image/ScrapBox.png"       style="background-color:#ffffff;"></a>
-        <!--
-            <a href=""><img src="image/.svg" style="background-color:#;"></a>
-        -->
+        <h1>このサイトについて</h1>
+        <p>
+            ルチルさんの公式サイトです。<br>
+            無料で遊べるフリーゲームなどの作品を紹介しています。<br>
+        </p>
+
+        <hr>
+        <h1>現在開発中</h1>
+        <h2>WSTG(仮)</h2>
+        <div class="thumbnail">
+            <a href="./Image/WSTG0.png" data-lightbox="WSTG" data-title="自機とクンツァイト">
+                <img src="./Image/WSTG0.png" alt="WSTGサムネイル0">
+            </a>
+            <a href="./Image/WSTG1.png" data-lightbox="WSTG" data-title="自機とコードレッド">
+                <img src="./Image/WSTG1.png" alt="WSTGサムネイル1">
+            </a>
+            <a href="./Image/WSTG2.png" data-lightbox="WSTG" data-title="自機とレイテンシ">
+                <img src="./Image/WSTG2.png" alt="WSTGサムネイル2">
+            </a>
+        </div>
+        <div class="item">
+            <div class="name">リリース</div><div class="value">2019年冬 予定</div><div class="clear"/>
+            <div class="name">ジャンル</div><div class="value">縦スクロールシューティング</div><div class="clear"/>
+            <div class="name">開発環境</div><div class="value">C++ ＤＸライブラリ TinyXML-2</div><div class="clear"/>
+        </div>
+        <p>
+            ショートショート形式のシューティングゲーム。<br>
+            強力なレーザー攻撃「ブルートレイ」を駆使し、敵と敵弾を破砕しながら進め！<br>
+        </p>
+
+        <hr>
+        <h1>作品紹介</h1>
+        <h2>チェイスタイル</h2>
+        <div class="thumbnail">
+            <a href="./Image/チェィスタイル0.png" data-lightbox="CT" data-title="">
+                <img src="./Image/チェィスタイル0.png" alt="チェイスタイルサムネイル0">
+            </a>
+            <a href="./Image/チェィスタイル1.png" data-lightbox="CT" data-title="">
+                <img src="./Image/チェィスタイル1.png" alt="チェイスタイルサムネイル1">
+            </a>
+            <a href="./Image/チェィスタイル2.png" data-lightbox="CT" data-title="">
+                <img src="./Image/チェィスタイル2.png" alt="チェイスタイルサムネイル2">
+            </a>
+        </div>
+        <div class="item">
+            <div class="name">リリース   </div><div class="value">2019年12月30日</div><div class="clear"/>
+            <div class="name">ジャンル   </div><div class="value">せり上がりパズルゲーム</div><div class="clear"/>
+            <div class="name">開発環境   </div><div class="value">C++ ＤＸライブラリ</div><div class="clear"/>
+            <div class="name">ダウンロード</div><div class="value"><a href="https://www.freem.ne.jp/win/game/16559" name="チェイスタイル">外部サイトへ</a></div><div class="clear"/>
+        </div>
+        <p>
+            私の初作品。<br>
+            マウス操作で3種類のタイルを消す、せり上がりパズルゲーム。<br>
+        </p>
+
+        <hr>
+        <h1>外部リンク</h1>
+        <div class="item">
+            <div class="name">Scrapbox</div><div class="value"><a href="https://scrapbox.io/Rutile3/プロジェクト一覧" name="Scrapbox">外部サイトへ</a></div><div class="clear"/>
+            <div class="name">GitHub  </div><div class="value"><a href="https://github.com/Rutile3" name="GitHub">外部サイトへ</a></div><div class="clear"/>
+            <div class="name">YouTube </div><div class="value"><a href="https://www.youtube.com/channel/UCfvhqyOy9UVfXEPmdASaXhA?view_as=subscriber" name="YouTube">外部サイトへ</a></div><div class="clear"/>
+            <div class="name">niconico</div><div class="value"><a href="https://www.nicovideo.jp/user/60418794" name="niconico">外部サイトへ</a></div><div class="clear"/>
+        </div>
     </main>
     <footer>
-        <p>
-            公開日　：2018年3月12日
-            <br>
-            <script type="text/javascript">
-                //https://www.nishishi.com/javascript-tips/doc-lastmodified.html参考
-                //JavaScriptのファイルを作ったほうがいいと思う
-                var modified = new Date(document.lastModified);
-                var year = modified.getFullYear();
-                var month = modified.getMonth() + 1;
-                var date = modified.getDate();
-                document.write("最終更新：" + year + "年" + month + "月" + date + "日");
-            </script>
-            <br> Copyright©2018 ルチル
-        </p>
+
     </footer>
+    <script src="./Script/lightbox.js"></script>
 </body>
 
 </html>
