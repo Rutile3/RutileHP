@@ -7,10 +7,6 @@
             box-sizing: border-box;
     -moz-osx-font-smoothing: grayscale;
      -webkit-font-smoothing: antialiased;
-     -webkit-text-size-adjust: 100%;
-        -moz-text-size-adjust: 100%; 
-         -ms-text-size-adjust: 100%; 
-             text-size-adjust: 100%; 
 }
 
 body {
@@ -18,6 +14,7 @@ body {
     color: #333333;
     font-size: 16px;
 }
+
 header {
     margin: 32px auto;
 }
@@ -37,7 +34,7 @@ main {
 main a:link,
 main a:visited,
 main a:hover,
-main a:active{ color: #02bec4;}
+main a:active { color: #02bec4;}
 
 main h1 { margin: 16px auto;}
 main h2 { margin:  8px auto;}
@@ -52,14 +49,8 @@ main hr { border: 1px solid #0285a5;}
     height: 30%;
 }
 
-.item .name:before { content:"・";}
-.item .name {
-    width: 125px;
-    float: left;
-}
-
-.item .value:before { content:"：";}
-.item .value { float: left;}
-
-.clear { clear: both;
+main ul li::before { content:"＞";}
+main ul {
+    list-style: none;
+    padding-left: 0px;
 }
