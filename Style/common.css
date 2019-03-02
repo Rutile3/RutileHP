@@ -7,50 +7,87 @@
           box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
-  }
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   background-color: #A9E8DC;
   color: #333333;
   font-size: 16px;
-  }
+}
 
 header {
   margin: 32px auto;
-  }
+}
 
 header h1 {
   text-align: center;
-  font-size: 4em;
-  }
+  font-size: 3em;
+}
 
 main {
   margin: 16px auto;
   padding: 12px;
-  width: 720px;
+  width: 95%;
+  max-width: 900px;
   background-color: #E1F7E6;
-  } 
+} 
 
 main a:link,
 main a:visited,
 main a:hover,
 main a:active { color: #02BEC4;}
 
-main h1 { margin: 16px auto;}
-main h2 { margin: 8px auto;}
+main h1 {font-size: 2.0em; margin: 16px auto;}
+main h2 {font-size: 1.5em; margin: 8px auto;}
 
-main hr { border: 1px solid #0285A5;}
+main hr {
+  border: 1px solid #0285A5;
+  margin: 16px 0;
+}
 
-.thumbnail { text-align: center;}
-.thumbnail img {
-  margin: 0px 2px;
-  padding: 0px;
-  width: 30%;
-  height: 30%;
-  }
+main div.thumbnail { 
+  text-align: center;
+  font-size: 0;
+  margin: 8px 0 16px;
+}
+main div.thumbnail a{ 
+  display: inline-block;
+  width: 30%; 
+  height: auto;
+  margin: 0 2px;
+  padding: 0;
+}
+main div.thumbnail img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
-main ul li::before { content: "＞";}
+main p {
+  margin: 8px 0;
+}
+
 main ul {
   list-style: none;
-  padding-left: 0px;
-  }
+  padding-left: 0;
+  font-size: 0;
+}
+main ul li div.item,
+main ul li div.value {
+  font-size: 16px;
+  display: inline-block;
+  height: 100%;
+}
+main ul li div.item::before { content: "・"; }
+main ul li div.item::after  { content: "："; }
+
+@media screen and (max-width: 600px) {
+  main ul li div.item,
+  main ul li div.value,
+  body     { font-size: 2.66vw; }
+  header h1{ font-size: 8.00vw; }
+  main h1  { font-size: 5.33vw; }
+  main h2  { font-size: 4.00vw; }
+}
