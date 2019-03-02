@@ -104,7 +104,7 @@ html.lb-disable-scrolling {
 }
 
 .lb-nav a.lb-prev {
-  width: 34%;
+  width: 50%;
   left: 0;
   float: left;
   background: url(../Image/Lightbox/prev.png) left 48% no-repeat;
@@ -122,7 +122,7 @@ html.lb-disable-scrolling {
 }
 
 .lb-nav a.lb-next {
-  width: 64%;
+  width: 50%;
   right: 0;
   float: right;
   background: url(../Image/Lightbox/next.png) right 48% no-repeat;
