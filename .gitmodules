@@ -1,0 +1,3 @@
+[submodule "Library/Lightbox2"]
+	path = Library/Lightbox2
+	url = https://github.com/lokesh/lightbox2.git
