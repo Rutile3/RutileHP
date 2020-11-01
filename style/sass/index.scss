@@ -1,0 +1,104 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #A9E8DC;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: #E1F7E6;
+  margin: 2.5vw auto;
+  padding: 2.5vw;
+  width: 95vw;
+  
+  & a{
+    &:link,
+    &:visited,
+    &:hover,
+    &:active { color: #0256c4;}
+  }
+
+  & hr {
+    border: 1px solid #0285A5;
+    margin: 16px 0;
+  }
+}
+
+.page-title {
+  font-size: 3em;
+  margin: 0.5em 0;
+}
+
+.about-site-header,
+.develop-status-header,
+.out-link-header {
+  font-size: 2em;
+  margin: 0em;
+}
+
+.product-name {
+  font-size: 1.5em;
+  margin: 0em;
+}
+
+.product {
+  &>.product-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+
+    &>a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &>img {
+        width: 100%;
+      }
+    }
+  }
+
+  &>.product-data {
+    // ul で発生する左の余白を小さくする
+    // デフォルトでは 40px が指定されている
+    padding-left: 20px;
+    margin: 0.5em 0;
+  }
+
+  &>.product-explanation {
+    margin: 0.5em 0;
+  }
+}
+
+.out-link {
+  padding-left: 20px;
+  margin: 0.5em 0;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 600px;
+  }
+
+  main {
+    margin: 15px auto;
+    padding: 15px;
+    width: 570px;
+  }
+
+  .product>.product-thumbnails {
+    grid-template-columns: 100%;
+    row-gap: 1em;
+  }
+}
